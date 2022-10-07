@@ -6,7 +6,7 @@ public class main{
         Scanner in = new Scanner(System.in);
         System.out.print("Input text");
         String str = in.nextLine();
-        str = str.replaceAll("[^a-zA-Z]", "");
+        str = str.replaceAll("[^A-Za-z1-9]+", "");
         str = str.toLowerCase();
         System.out.println(str);
         String reverse = new StringBuffer(str).reverse().toString();
